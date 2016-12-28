@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ihs-wi-SHp">
+            <objects>
+                <viewController id="Lv1-vm-GVJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mIY-Eo-QHt"/>
+                        <viewControllerLayoutGuide type="bottom" id="z1Y-Iu-BWa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DuR-f7-6jf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hinh-nen-hoat-hinh-3d-full-hd-don-gian-ma-dep-5" translatesAutoresizingMaskIntoConstraints="NO" id="xcp-Lu-2KZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdM-vh-TgQ">
+                                <rect key="frame" x="32" y="216" width="310" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="toeic"/>
+                                <connections>
+                                    <segue destination="HLW-YY-d4Q" kind="show" id="56o-Zl-0bO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eh4-p0-t47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="260.41979010494754"/>
+        </scene>
+        <!--Menu Control-->
+        <scene sceneID="3et-dR-9oT">
+            <objects>
+                <viewController id="HLW-YY-d4Q" customClass="MenuControl" customModule="Hien_Mid_Term" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o5x-D2-iyD"/>
+                        <viewControllerLayoutGuide type="bottom" id="37X-KQ-FNG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tpN-d7-TVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hinh-nen-powerpoint-don-gian-2" translatesAutoresizingMaskIntoConstraints="NO" id="PVK-8O-bbg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wp1-RY-sYP">
+                                <rect key="frame" x="42" y="42" width="291" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QpA-sC-RDm">
+                                <rect key="frame" x="16" y="372" width="221" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ab-2b-lPG">
+                                <rect key="frame" x="261" y="343" width="85" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DONE" image="Done"/>
+                                <connections>
+                                    <action selector="submitBTN:" destination="HLW-YY-d4Q" eventType="touchUpInside" id="iCQ-dJ-idC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="picture" destination="wp1-RY-sYP" id="Ep1-sE-otG"/>
+                        <outlet property="textbox" destination="QpA-sC-RDm" id="DPT-8O-V7D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUE-aS-SY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="1011.544227886057"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Hien_Mid_Term" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="15-12nhung-hinh-nen-may-tinh-dep-nhat-va-da-dang1" translatesAutoresizingMaskIntoConstraints="NO" id="s08-hk-rQs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXz-nr-2Yd">
+                                <rect key="frame" x="118" y="129" width="166" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="start_sign"/>
+                                <connections>
+                                    <segue destination="Lv1-vm-GVJ" kind="show" id="XCe-Nc-sZT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-b7-dMJ">
+                                <rect key="frame" x="118" y="488" width="166" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="contact-us-HiRes"/>
+                                <connections>
+                                    <segue destination="DuA-4k-JGR" kind="show" id="F8l-Zu-CMA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGW-vC-bzg">
+                                <rect key="frame" x="118" y="313" width="166" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Huong dan su dung"/>
+                                <connections>
+                                    <segue destination="J7Z-W8-pB7" kind="show" id="xeS-6s-yAK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NHÌN HÌNH  ĐIỀN CHỮ TIẾNG ANH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKd-2b-B8i">
+                                <rect key="frame" x="28" y="46" width="319" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.92553013563156128" green="0.075109753618383346" blue="0.077249529145107951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.92553013563156128" green="0.052804569068413583" blue="0.041134342959191522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.89988004849714909" green="0.92553013563156128" blue="0.87944759008269113" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mtr-ls-77j">
+            <objects>
+                <viewController id="DuA-4k-JGR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6sB-6k-x8I"/>
+                        <viewControllerLayoutGuide type="bottom" id="JVn-wb-zAa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sOi-BP-1pY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hinh-nen-may-tinh-de-thuong-2" translatesAutoresizingMaskIntoConstraints="NO" id="zaZ-eS-9zS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="website-icon-11" translatesAutoresizingMaskIntoConstraints="NO" id="mbd-dH-Ql3">
+                                <rect key="frame" x="126" y="43" width="132" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-sv-wJX">
+                                <rect key="frame" x="142" y="158" width="116" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email-icon--100-flat-vol-2-iconset--graphicloads-18" translatesAutoresizingMaskIntoConstraints="NO" id="NEU-zg-6OU">
+                                <rect key="frame" x="134" y="300" width="133" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhd-F1-lDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="871.21439280359823"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ycp-rN-Lvc">
+            <objects>
+                <viewController id="J7Z-W8-pB7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tgo-OX-kuk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wq1-wr-9hX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tYH-HH-iSe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hinh-nen-de-thuong-4" translatesAutoresizingMaskIntoConstraints="NO" id="vfP-Bk-KJ0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TfL-p8-UTB">
+                                <rect key="frame" x="48" y="122" width="240" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Đây là ứng dụng trò chơi vừa giúp bạn thư giản vừa giúp bạn rèn luyện thêm khả năng học thuộc từ vựng tiếng anh của mình.   
+Trò chơi được chia thành nhiều chủ đề, mỗi chủ đề về một lĩnh vực nhất định, bạn phải chọn một chủ đề. Sau khi đã chọn chủ đề trò chơi sẽ bắt đầu. Hình ảnh đầu tiên sẽ hiện lên và kèm ô điền từ bằng tiếng bên dưới, bạn cần điền đúng từ để bước qua hình ảnh tiếp theo.
+</string>
+                                <color key="textColor" red="0.07917263516070383" green="0.13260923587517559" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HƯỚNG DẪN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q6-l8-WNl">
+                                <rect key="frame" x="108" y="20" width="170" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.11215142226874841" blue="0.12437211633427581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="0.12312513548188264" blue="0.21026189159951225" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FF9-vp-8dy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="15-12nhung-hinh-nen-may-tinh-dep-nhat-va-da-dang1" width="1024" height="768"/>
+        <image name="Done" width="800" height="800"/>
+        <image name="Huong dan su dung" width="650" height="459"/>
+        <image name="contact-us-HiRes" width="500" height="460"/>
+        <image name="email-icon--100-flat-vol-2-iconset--graphicloads-18" width="256" height="256"/>
+        <image name="hinh-nen-de-thuong-4" width="800" height="600"/>
+        <image name="hinh-nen-hoat-hinh-3d-full-hd-don-gian-ma-dep-5" width="1920" height="1200"/>
+        <image name="hinh-nen-may-tinh-de-thuong-2" width="640" height="480"/>
+        <image name="hinh-nen-powerpoint-don-gian-2" width="1200" height="900"/>
+        <image name="images-1" width="198" height="254"/>
+        <image name="start_sign" width="400" height="300"/>
+        <image name="toeic" width="1045" height="300"/>
+        <image name="website-icon-11" width="512" height="512"/>
+    </resources>
+</document>
